@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+</head>
+<body>
+    <h2>Employee Course Regestration Form</h2>
+    <form  action="success.html">
+        <label for="Username">Enter your Username</label>
+
+        <input type="text" placeholder="Username" title="Only alphabets are allowed (A-Z,a-z)" pattern="[A-Za-z]*" minlength="2" maxlength="6"> <!--21-40 length range minlength/maxlength-->
+        <br><br>
+        <label for="Age">Enter your age</label>
+        <input type="number" placeholder="Age" title="age between 21-40 are allowed" min="21" max="40">
+        <!--21-40 value range: min/max-->
+        <br><br>
+        <label for="Name">Enter your Name</label>
+
+        <input type="text" placeholder="Name" required>
+        <br><br>
+        <p>Select Your Gender</p><br>
+        <input type="text" value="NeoSoft" disabled>
+        <input type="text" value="NeoSoft" readonly>
+        <br><br>
+        <div class="gendergroup">
+            <input type="radio" id="radio1" value="male" name="gender"><label for="radio1">MALE</label>
+            <input type="radio" id="radio2" value="female" name="gender" ><label for="radio2">FEMALE</label>
+
+        </div>
+        <br><br>
+        <input type="image" src="data:image/jpeg;base64,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">
+
+
+        <br><br>
+        <button type="submit">Register</button>
+
+        <br>
+        <p>Already have an account? </p>
+
+        <input type="submit" value="Login">
+    </form>
+    
+</body>
+</html>
